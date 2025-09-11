@@ -93,6 +93,7 @@
             <label for="cep">CEP:</label> <br>
             <input type="text" id="cep" name="cep" placeholder="00000-000">
         </fieldset>
+        <br>
     
         <fieldset>
 
@@ -122,12 +123,13 @@
             <label for="python">Python</label>
 
         </fieldset>
+        <br>
 
         <fieldset>
             
             <legend>Detalhes do Evento</legend>
 
-            <label for="tipo_evento">Tipo de Evento:</label>
+            <label for="tipo_evento">Tipo de Evento:</label> <br>
             <select id="tipo_evento" name="tipo_evento">
                 <option value="">Selecione...</option>
                 <option value="workshop">Workshop</option>
@@ -136,14 +138,46 @@
                 <option value="seminario">Seminário</option>
             </select><br><br>
 
-            <label for="data">Data:</label>
+            <label for="data">Data:</label> <br>
             <input type="date" id="data" name="data"><br><br>
 
-            <label for="hora">Hora de Início:</label>
+            <label for="hora">Hora de Início:</label> <br>
             <input type="time" id="hora" name="hora"><br><br>
 
-            <label for="participantes">Número de Participantes:</label>
+            <label for="participantes">Número de Participantes:</label> <br>
             <input type="number" id="participantes" name="participantes" value="1" min="1" style="width: 80px;">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferências e Notificações</legend>
+
+            <label>Formato do Evento:</label><br>
+            <input type="radio" id="online" name="formato" value="Online">
+            <label for="online">Online</label><br>
+
+            <input type="radio" id="presencial" name="formato" value="Presencial">
+            <label for="presencial">Presencial</label><br><br>
+
+            <label for="horario">Horário Preferido:</label> <br>
+            <select id="horario" name="horario">
+                <option value="">Selecione...</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select><br><br>
+
+            <input type="checkbox" id="novidades" name="novidades">
+            <label for="novidades">Quero receber novidades e newsletters</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Upload de Arquivos</legend>
+
+            <label for="curriculo">Enviar Currículo (PDF):</label> <br>
+            <input type="file" id="curriculo" name="curriculo" accept=".pdf"><br><br>
+
+            <label for="portfolio">Portfólio (opcional):</label> <br>
+            <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx,.zip">
         </fieldset>
     
     
